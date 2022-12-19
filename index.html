@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+                
+        }
+        nav {
+            display: flex;
+            margin: auto 10vw;
+            height: 100vh;
+            justify-content: center;
+
+            
+            
+        }
+        div {
+            flex-grow: 1;
+            height: 50px;
+            width: 100px;
+            border: 3px solid black;
+            margin: 20px;
+            cursor: pointer;
+            transition: .2s;
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .pink {
+            background-color: pink;
+        }
+        .black {
+            background-color: black;
+        }
+        div:hover{
+            opacity: 65%;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="orange"></div>
+    <div class="pink"></div>
+    <div class="black"></div>
+    </nav>
+    <script>
+        btnRed = document.querySelector(".red");
+        btnBlue = document.querySelector(".blue");
+        btnOrange = document.querySelector(".orange");
+        btnPink = document.querySelector(".pink");
+        btnBlack = document.querySelector(".black");
+        
+        btnRed.addEventListener("click", function(){
+        document.body.style.backgroundColor ="#f00";
+        })
+        btnBlue.addEventListener("click", function(){
+        document.body.style.backgroundColor ="blue";
+        })
+        btnOrange.addEventListener("click", function(){
+        document.body.style.backgroundColor ="orange";
+        })
+        btnPink.addEventListener("click", function(){
+        document.body.style.backgroundColor ="pink";
+        })
+        btnBlack.addEventListener("click", function(){
+        document.body.style.backgroundColor ="black";
+        })
+    </script>
+</body>
+</html>
